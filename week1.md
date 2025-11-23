@@ -6,7 +6,7 @@
 **Repo GitHub:**https://github.com/yenkhoa200/csn-da23ttb-tranthiyenkhoa-webtrangsuc-bootstrap.git
 
 ## 1. Tóm tắt
-Trong tuần này em đã tổng hợp tài liệu cơ bản về Bootstrap 5, Fetch API, Node API.
+Trong tuần này em đã tổng hợp tài liệu cơ bản về Bootstrap 5, Fetch API.
 Đã thực hiện cài đặt JON Server.
 Chạy thử 1 file db.json
 
@@ -19,4 +19,5 @@ Có 8 link để truy cập trang web
 2. Mở đầu
 3. Chương 1: Tổng quan
 3. Chương 2: Cơ sở lý thuyết.
+
 ## Bắt đầu phát thảo trang web
