@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web trang sức JSON</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <!--navbar-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../images/l.png"  class="img-fluid" alt="logo" width="100" heigth="30">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Trang chủ</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/product.html">Sản phẩm</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-outline-primary">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!--slider-->
+        <div class="slider py-3">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="../images/best_set/set1.jpg" class="d-block w-100" alt="set1">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../images/best_set/set2.jpg" class="d-block w-100" alt="set2">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../images/best_set/set3.jpg" class="d-block w-100" alt="set3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="container pt-4">
+            <h3 class="text-center mb-4">Bạn đang tìm gì hôm nay?</h3>
+            <div class="row text-center justify-content-center ">
+                <!--danh mục nhẫn-->
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <a href="#" class="category-link">
+                        <img src="../images/Ring/kim_cuong.png" class="img-fluid category-img">
+                        <p class="mt-2">Nhẫn</p>
+                    </a>
+                </div>
+
+                <!--Hoa tay-->
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <a href="#" class="category-link">
+                        <img src="../images/Earrings/bong_tai_ecz.png" class="img-fluid category-img">
+                        <p class="mt-2">Hoa tai</p>
+                    </a>
+                </div>
+
+                <!--Vòng vổ-->
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <a href="#" class="category-link">
+                        <img src="../images/Necklace/day_chuyen_vang.png" class="img-fluid category-img">
+                        <p class="mt-2">Vòng cổ</p>
+                    </a>
+                </div>
+
+                <!--Vòng tay-->
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <a href="#" class="category-link">
+                        <img src="../images/Bracelet/vongtay.jpg" class="img-fluid category-img">
+                        <p class="mt-2">Vòng tay</p>
+                    </a>
+                </div>
+
+                <!--Bộ trang sức-->
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <a href="#" class="category-link">
+                        <img src="../images/best_set/bgset.png" class="img-fluid category-img">
+                        <p class="mt-2">Bộ trang sức</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--list nổi bật sp-->
+        <div class="container py-4 bg-info">
+             <h3 class="text-center mb-4"> Sản phẩm mới</h3>
+            <div id="featured-slider" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" id="product-slider">
+                    
+                </div>
+                <!--nút điều hướng-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#featured-slider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#featured-slider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!--list sản phẩm nổi bật-->
+        <div class="container mt-5">
+            <h3 class="mb-4 text-center"> Sản phẩm bán chạy </h3>
+            <div class="container my-5">
+                <div class="row" id="product-list"></div>
+            </div>  
+        </div>
+
+        <!--footer-->
+        <div class="b-example-divider"></div> <div class="container"> 
+            <footer class="py-3 my-4">
+                <!--menu footer-->
+                 <ul class="nav justify-content-center border-bottom pb-3 mb-3"> 
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Trang chủ</a></li> 
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Sản phẩm</a></li> 
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Chi tiết sản phẩm</a></li> 
+                </ul> 
+
+                <div class="text-center text-body-secondary mb-2">
+                    <p class="mb-1"><strong>MIRA JEWELRY</strong> Thời trang trang sức cao cấp</p>
+                    <p class="mb-1">Địa chỉ: Đường Nguyễn Thiện Thành, Vĩnh Long</p>
+                    <p class="mb-1"> Hotline: 0213 123 456 </p>
+                    <p class="mb-1">✉ Email: support@mirajewelry.com</p>
+                </div>
+
+                <!--Bản quyền-->
+                <p class="text-center text-body-secondary">&copy; 2025 Mira Jewelry</p> 
+            </footer> 
+        </div>
+
+    </div>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../JS/main.js"></script>
+</body>
+</html>
