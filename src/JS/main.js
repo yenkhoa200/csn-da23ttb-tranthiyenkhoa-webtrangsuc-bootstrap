@@ -95,7 +95,7 @@ function renderProductDetail(product) {
     `;
 }
 
-// ====== HÀM KHỞI CHẠY CHUNG =====
+//  HÀM KHỞI CHẠY CHUNG 
 async function init() {
     const products = await fetchProducts(); 
 
@@ -115,5 +115,6 @@ async function init() {
     }
 }
 
-// ====== CHẠY  ======
+//  CHẠY 
 document.addEventListener("DOMContentLoaded", init);
+
