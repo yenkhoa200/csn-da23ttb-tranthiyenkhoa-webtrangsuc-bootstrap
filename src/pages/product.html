@@ -9,10 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 
 </head>
 <body>
@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="../images/l.png"  class="img-fluid" alt="logo" width="100" heigth="30">
+                    <img src="../images/l.png" class="img-fluid" alt="logo" width="100" height="30">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,29 +29,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./pages/index.html">Trang chủ</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html">Trang chủ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="pages/product.html">Sản phẩm</a>
+                            <a class="nav-link active" aria-current="page" href="product.html">Sản phẩm</a>
                         </li>
-                    <!--
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="product.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Sản phẩm
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Vòng cổ</a></li>
-                                <li><a class="dropdown-item" href="#">Hoa tay</a></li>
-                                <li><a class="dropdown-item" href="#">Vòng tay</a></li>
-                                <li><a class="dropdown-item" href="#">Nhẫn</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Bộ sưu tập</a></li>
-                            </ul>
-                        </li>
-                    -->
-
+            
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="pages/detail.html">Chi tiết sản phẩm</a>
+                            <a class="nav-link active" aria-current="page" href="./detail.html">Chi tiết sản phẩm</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -68,8 +53,46 @@
             </div>
         </nav>
 
+        <!--silder-->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="../images/Ring/gt_nhan.jpg" class="d-block w-100" alt="gtnhan1">
+                </div>
+                <div class="carousel-item">
+                <img src="../images/best_set/tronbo.jpg" class="d-block w-100" alt="gtnhan2">
+                </div>
+                <div class="carousel-item">
+                <img src="../images/best_set/set3.jpg" class="d-block w-100" alt="gtnhan3">
+                </div>
+            </div>
+        </div>
 
-
+        <!--danh mục sản phẩm-->
+        <div class="container pt-3">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-6">
+                    <div class="list-group">
+                        <a href="./product.html" class="list-group-item list-group-item-action active" aria-current="true">
+                            Tất cả
+                        </a>
+                        <a href="product.html?category=Nhẫn" class="list-group-item list-group-item-action">Nhẫn</a>
+                        <a href="#" class="list-group-item list-group-item-action">Hoa tai</a>
+                        <a href="#" class="list-group-item list-group-item-action">Vòng cổ</a>
+                        <a href="#" class="list-group-item list-group-item-action">Vòng tay</a>
+                        <a href="#" class="list-group-item list-group-item-action disabled" aria-disabled="true">Bộ sưu tập</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container mt-5">
+            <h3 class="mb-4 text-center"> Danh sách sản phẩm </h3>
+            <div class="container my-5">
+                <div class="row" id="product-list"></div>
+            </div>  
+        </div>
+        
         <!--footer-->
         <div class="b-example-divider"></div> <div class="container"> 
             <footer class="py-3 my-4">
@@ -96,5 +119,9 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--script-->
+    <script src="../JS/main.js"></script>
+
 </body>
 </html>
