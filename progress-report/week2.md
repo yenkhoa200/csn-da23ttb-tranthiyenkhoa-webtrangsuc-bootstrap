@@ -16,4 +16,5 @@ Trong tuần này, em đã thiết kế giao diện: trang chủ, sản phẩm, 
 
 ## Chưa thực hiện:
 
-Chưa thiết kế bố cục lọc sản phẩm, chưa thiết kế chức năng giỏ hàng.
+Chưa hoàn thiện bố cục lọc sản phẩm, chưa thiết kế chức năng giỏ hàng.
+
