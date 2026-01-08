@@ -20,4 +20,6 @@ Các chức năng cơ bản của trang web:
     <li>Editor: VS Code</li>
     <li>Quản lý mã nguồn: Github</li>
 </ul>
+
 ## git clone https://github.com/yenkhoa200/csn-da23ttb-tranthiyenkhoa-webtrangsuc-bootstrap.git
+## link canva: https://www.canva.com/design/DAG9zJCpDDE/OEudzTerfZQw2CvCa8lk0g/edit?utm_content=DAG9zJCpDDE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
